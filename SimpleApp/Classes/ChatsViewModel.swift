@@ -14,7 +14,7 @@ import RxCocoa
 struct ChatsViewModel {
     let db = Firestore.firestore()
     
-    var chats = BehaviorRelay<[Chat]>(value: [])
+    var chats = BehaviorRelay<[Chat]>(value: [Chat]())
     var ref: DocumentReference? = nil
     
     func getChats() {

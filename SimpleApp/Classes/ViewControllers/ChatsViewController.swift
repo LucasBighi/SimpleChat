@@ -17,13 +17,19 @@ class ChatsViewController: UIViewController {
     
     private let chatsViewModel = ChatsViewModel()
     private let userViewModel = UserViewModel()
+    private let messagesViewModel = MessagesViewModel()
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         bindUser()
-        bindChats()
         chatsTableView.rx.setDelegate(self).disposed(by: disposeBag)
+        bindChats()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+//        bindChats()
     }
     
     private func bindUser() {
@@ -37,10 +43,14 @@ class ChatsViewController: UIViewController {
     }
     
     private func bindChats() {
-        chatsViewModel.chats.bind(to: chatsTableView.rx.items(cellIdentifier: "cell", cellType: UITableViewCell.self)) { row, chat, cell in
-            cell.textLabel?.text = chat.message
-            cell.detailTextLabel?.text = chat.sender
+        chatsViewModel.chats.bind(to: chatsTableView.rx.items(cellIdentifier: "cell", cellType: ChatTableViewCell.self)) { row, chat, cell in
+            cell.setup(with: chat)
         }.disposed(by: disposeBag)
+        
+        chatsTableView.rx.itemSelected.subscribe(onNext: { (indexPath) in
+            let user = ChatUser(self.chatsViewModel.chats.value[indexPath.row].sender)
+            self.messagesViewModel.getMessages(of: user)
+            }).disposed(by: disposeBag)
         
         chatsViewModel.getChats()
     }
@@ -53,7 +63,7 @@ class ChatsViewController: UIViewController {
                         self.showAlert(title: "Error", message: error.localizedDescription)
                     }
                 }
-        }
+            }
         .addAction(title: "No, I'm mistaken", handler: nil), animated: true)
     }
     
@@ -68,6 +78,7 @@ class ChatsViewController: UIViewController {
             textField.isSecureTextEntry = true
         }
         .addAction(title: "Login", handler: { (alert, action) in
+            print("Alert superclass: \(alert.superclass)")
             let email = alert.textFields![0].text!
             let password = alert.textFields![1].text!
             self.userViewModel.login(email: email, password: password) { (result) in
@@ -111,5 +122,9 @@ class ChatsViewController: UIViewController {
 extension ChatsViewController: UITableViewDelegate {
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 106
     }
 }

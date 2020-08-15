@@ -11,20 +11,20 @@ import FirebaseFirestore
 
 struct Chat {
     
-    let message: String
+    let lastMessage: String
     let sender: String
-    let time: String
+    let time: Date
     
     init?(snapshot: DocumentSnapshot?) {
         guard let dict = snapshot?.data(),
-            let message = dict["message"] as? String,
-            let sender = dict["sender"] as? String,
-            let time = dict["time"] as? String else {
+            let lastMessage = dict["lastMessage"] as? String,
+            let sender = snapshot?.documentID,
+            let time = dict["time"] as? Timestamp else {
                 return nil
         }
         
-        self.message = message
+        self.lastMessage = lastMessage
         self.sender = sender
-        self.time = time
+        self.time = time.dateValue()
     }
 }
