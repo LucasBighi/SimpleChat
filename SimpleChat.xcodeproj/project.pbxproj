@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B023DAE254711CC0090098F /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B023DAD254711CC0090098F /* ChatsViewController.swift */; };
+		1B29B0142547519C00179A49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B29B0132547519C00179A49 /* GoogleService-Info.plist */; };
+		1B29B0A52547726300179A49 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B29B0A42547726300179A49 /* MessagesViewController.swift */; };
 		1B76AA9D254706120098DCFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B76AA9C254706120098DCFD /* AppDelegate.swift */; };
 		1B76AA9F254706120098DCFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B76AA9E254706120098DCFD /* SceneDelegate.swift */; };
-		1B76AAA1254706120098DCFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B76AAA0254706120098DCFD /* ViewController.swift */; };
 		1B76AAA4254706120098DCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B76AAA2254706120098DCFD /* Main.storyboard */; };
 		1B76AAA6254706180098DCFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B76AAA5254706180098DCFD /* Assets.xcassets */; };
 		1B76AAA9254706180098DCFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B76AAA7254706180098DCFD /* LaunchScreen.storyboard */; };
+		1B76AAB2254708720098DCFD /* ChatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B76AAB1254708720098DCFD /* ChatsTableViewCell.swift */; };
+		1BD1BBAF2556FDA5004B031F /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1BBAE2556FDA5004B031F /* Chat.swift */; };
+		1BD1BBB22556FDB0004B031F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1BBB12556FDB0004B031F /* Message.swift */; };
+		1BD1BBB72556FFF1004B031F /* MessagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1BBB62556FFF1004B031F /* MessagesTableViewCell.swift */; };
+		A5AF21F3B6DE4D51AFC0C368 /* Pods_SimpleChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9C445DA58FB9004DC6ED33 /* Pods_SimpleChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10063DD93C37392BD9B5966B /* Pods-SimpleChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleChat.release.xcconfig"; path = "Target Support Files/Pods-SimpleChat/Pods-SimpleChat.release.xcconfig"; sourceTree = "<group>"; };
+		1B023DAD254711CC0090098F /* ChatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		1B29B0132547519C00179A49 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1B29B0A42547726300179A49 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		1B76AA99254706120098DCFD /* SimpleChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B76AA9C254706120098DCFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B76AA9E254706120098DCFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1B76AAA0254706120098DCFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1B76AAA3254706120098DCFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B76AAA5254706180098DCFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B76AAA8254706180098DCFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B76AAAA254706180098DCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B76AAB1254708720098DCFD /* ChatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsTableViewCell.swift; sourceTree = "<group>"; };
+		1BD1BBAE2556FDA5004B031F /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		1BD1BBB12556FDB0004B031F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		1BD1BBB62556FFF1004B031F /* MessagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessagesTableViewCell.swift; path = SimpleChat/Classes/MessagesTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		1F9C445DA58FB9004DC6ED33 /* Pods_SimpleChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BE2453EB45F43775775E1B7 /* Pods-SimpleChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleChat.debug.xcconfig"; path = "Target Support Files/Pods-SimpleChat/Pods-SimpleChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5AF21F3B6DE4D51AFC0C368 /* Pods_SimpleChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0089E5B071E2123C59376E37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F9C445DA58FB9004DC6ED33 /* Pods_SimpleChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1B76AA90254706120098DCFD = {
 			isa = PBXGroup;
 			children = (
 				1B76AA9B254706120098DCFD /* SimpleChat */,
 				1B76AA9A254706120098DCFD /* Products */,
+				EA206A1D86B5C22C785C2F9F /* Pods */,
+				0089E5B071E2123C59376E37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +83,62 @@
 		1B76AA9B254706120098DCFD /* SimpleChat */ = {
 			isa = PBXGroup;
 			children = (
-				1B76AA9C254706120098DCFD /* AppDelegate.swift */,
-				1B76AA9E254706120098DCFD /* SceneDelegate.swift */,
-				1B76AAA0254706120098DCFD /* ViewController.swift */,
-				1B76AAA2254706120098DCFD /* Main.storyboard */,
-				1B76AAA5254706180098DCFD /* Assets.xcassets */,
-				1B76AAA7254706180098DCFD /* LaunchScreen.storyboard */,
-				1B76AAAA254706180098DCFD /* Info.plist */,
+				1BD1BBAC2556FD55004B031F /* Classes */,
+				1BD1BBAB2556FD45004B031F /* Views */,
+				1BD1BBB42556FE38004B031F /* Models */,
+				1BD1BBAA2556FD30004B031F /* Resources */,
 			);
 			path = SimpleChat;
+			sourceTree = "<group>";
+		};
+		1BD1BBAA2556FD30004B031F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1B76AA9C254706120098DCFD /* AppDelegate.swift */,
+				1B29B0132547519C00179A49 /* GoogleService-Info.plist */,
+				1B76AA9E254706120098DCFD /* SceneDelegate.swift */,
+				1B76AAAA254706180098DCFD /* Info.plist */,
+				1B76AAA5254706180098DCFD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1BD1BBAB2556FD45004B031F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B76AAA2254706120098DCFD /* Main.storyboard */,
+				1B76AAA7254706180098DCFD /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1BD1BBAC2556FD55004B031F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1B023DAD254711CC0090098F /* ChatsViewController.swift */,
+				1BD1BBB62556FFF1004B031F /* MessagesTableViewCell.swift */,
+				1B29B0A42547726300179A49 /* MessagesViewController.swift */,
+				1B76AAB1254708720098DCFD /* ChatsTableViewCell.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1BD1BBB42556FE38004B031F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1BD1BBAE2556FDA5004B031F /* Chat.swift */,
+				1BD1BBB12556FDB0004B031F /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA206A1D86B5C22C785C2F9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BE2453EB45F43775775E1B7 /* Pods-SimpleChat.debug.xcconfig */,
+				10063DD93C37392BD9B5966B /* Pods-SimpleChat.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B76AAAD254706180098DCFD /* Build configuration list for PBXNativeTarget "SimpleChat" */;
 			buildPhases = (
+				A9EDB043D71DAC7B1F669A69 /* [CP] Check Pods Manifest.lock */,
 				1B76AA95254706120098DCFD /* Sources */,
 				1B76AA96254706120098DCFD /* Frameworks */,
 				1B76AA97254706120098DCFD /* Resources */,
+				1000F7E8DC0A6C397AF32BB2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B76AAA9254706180098DCFD /* LaunchScreen.storyboard in Resources */,
+				1B29B0142547519C00179A49 /* GoogleService-Info.plist in Resources */,
 				1B76AAA6254706180098DCFD /* Assets.xcassets in Resources */,
 				1B76AAA4254706120098DCFD /* Main.storyboard in Resources */,
 			);
@@ -132,14 +209,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1000F7E8DC0A6C397AF32BB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleChat/Pods-SimpleChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleChat/Pods-SimpleChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleChat/Pods-SimpleChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9EDB043D71DAC7B1F669A69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1B76AA95254706120098DCFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B76AAA1254706120098DCFD /* ViewController.swift in Sources */,
 				1B76AA9D254706120098DCFD /* AppDelegate.swift in Sources */,
+				1BD1BBB72556FFF1004B031F /* MessagesTableViewCell.swift in Sources */,
+				1BD1BBAF2556FDA5004B031F /* Chat.swift in Sources */,
+				1B023DAE254711CC0090098F /* ChatsViewController.swift in Sources */,
+				1B76AAB2254708720098DCFD /* ChatsTableViewCell.swift in Sources */,
+				1B29B0A52547726300179A49 /* MessagesViewController.swift in Sources */,
 				1B76AA9F254706120098DCFD /* SceneDelegate.swift in Sources */,
+				1BD1BBB22556FDB0004B031F /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,17 +407,18 @@
 		};
 		1B76AAAE254706180098DCFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BE2453EB45F43775775E1B7 /* Pods-SimpleChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N63WMA8228;
+				DEVELOPMENT_TEAM = CPGK826DG8;
 				INFOPLIST_FILE = SimpleChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SimpleChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tests.SimpleChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,17 +427,18 @@
 		};
 		1B76AAAF254706180098DCFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10063DD93C37392BD9B5966B /* Pods-SimpleChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N63WMA8228;
+				DEVELOPMENT_TEAM = CPGK826DG8;
 				INFOPLIST_FILE = SimpleChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SimpleChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tests.SimpleChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
